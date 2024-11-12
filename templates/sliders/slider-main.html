@@ -1,0 +1,10 @@
+{% load static %}
+{% load thumbnail %}
+<div class="main-slider" align="center" style="padding-bottom:5%; padding-left:15%; padding-right:15%">
+  {% for image in images %}
+    {% thumbnail image.image 800x450 crop as im %}
+    <div>
+      <img class="main-image" data-bs-toggle="modal" data-bs-target="#Modal" src="{{ im.url }}" alt="{{ image.description }}">
+    </div>
+  {% endfor %}
+</div>
