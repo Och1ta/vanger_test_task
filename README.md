@@ -28,7 +28,7 @@ source venv/Scripts/activate # for Windows
 ```bash
 pip install -r req.pip
 ```
-- В директории проекта (содержащей файл manager.py) создайте .env, содержащий **DJANGO_KEY** (секретный ключ django), **DB_NAME**, **USER_NAME**, **USER_PASSWORD** (данные для подключения к бд MySQL)  
+- В директории проекта (содержащей файл manage.py) создайте .env, содержащий **DJANGO_KEY** (секретный ключ django), **DB_NAME**, **USER_NAME**, **USER_PASSWORD** (данные для подключения к бд MySQL)  
 Пример наполнения env-file:
 ```bash
 SECRET_KEY = 'django-insecure-auw3xt4b4-i!-8je2v36z)^h_rzpw@c13i)rp*)%9bjn1v$eq&'
